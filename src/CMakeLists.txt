@@ -1,0 +1,17 @@
+add_subdirectory(common)
+add_subdirectory(config)
+add_subdirectory(vtkUtils)
+add_subdirectory(networking)
+
+if (USE_ZSPACE)
+    add_subdirectory(zspace)
+endif()
+
+add_subdirectory(barco)
+add_subdirectory(display)
+add_subdirectory(tracking)
+add_subdirectory(interaction)
+add_subdirectory(widgets)
+add_subdirectory(appcore)
+add_subdirectory(serverApp)
+add_subdirectory(clientApp)

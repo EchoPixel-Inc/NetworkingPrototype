@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>858</width>
+    <height>731</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QVTKOpenGLStereoWidget" name="openGLWidget"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>858</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuNetworking">
+    <property name="title">
+     <string>Networking</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuActions">
+    <property name="title">
+     <string>Actions</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuNetworking"/>
+   <addaction name="menuActions"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionLoad_DICOM">
+   <property name="text">
+    <string>Load DICOM</string>
+   </property>
+  </action>
+  <action name="actionShow_Client_Window">
+   <property name="text">
+    <string>Show Client Window</string>
+   </property>
+  </action>
+  <action name="actionStart_Network_Session">
+   <property name="text">
+    <string>Start Network Session</string>
+   </property>
+  </action>
+  <action name="actionCreate_Spline_Widget">
+   <property name="text">
+    <string>Create Spline Widget</string>
+   </property>
+  </action>
+  <action name="actionShow_Session_Info">
+   <property name="text">
+    <string>Show Session Info</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QVTKOpenGLStereoWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header>QVTKOpenGLStereoWidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

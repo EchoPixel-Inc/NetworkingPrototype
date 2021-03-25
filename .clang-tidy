@@ -1,0 +1,11 @@
+# ==============================================================================
+# author: Jeffrey Kasten (jeffrey@echopixeltech.com)
+# date: 2020/06/22
+# version: 1.0
+# ==============================================================================
+---
+# This configuration requires clang-tidy 9.0 or higher
+Checks: 'performance-*,cppcoreguidelines-*,readability-*,modernize-*,bugprone-*,llvm-namespace-comment,google-explicit-constructor,google-readability-todo,google-runtime-references,misc-*'
+WarningsAsErrors: ''
+FormatStyle: file
+...
