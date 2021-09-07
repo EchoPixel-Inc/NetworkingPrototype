@@ -943,6 +943,7 @@ void ClientApp::onFullStateUpdated(
 	m_ApplicationObjects.cutplane->setInteractor(m_Interactor);
 	m_ApplicationObjects.cutplane->setProcessEvents(true);
 
+    m_ApplicationObjects.volume->removeAllClippingPlanes();
 	m_ApplicationObjects.volume->addClippingPlane(
 		m_ApplicationObjects.cutplane->getPlane());
 
