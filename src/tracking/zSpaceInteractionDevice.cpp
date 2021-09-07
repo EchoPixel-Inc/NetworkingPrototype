@@ -198,6 +198,8 @@ void zSpaceInteractionDevice::onStylusMoved()
 	if (m_StylusMovedCallback) {
 		m_StylusMovedCallback(currentPose);
 	}
+
+    std::cout << "ZSpace stylus moved - " << currentPose.data[3] << " " << currentPose.data[7] << " " << currentPose.data[11] << " " << currentPose.data[15] << std::endl;
 }
 //==============================================================================
 
