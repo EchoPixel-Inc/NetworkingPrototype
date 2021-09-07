@@ -25,7 +25,9 @@ std::shared_ptr<DisplayInterface> makeDefaultImplementation()
 	}
 
 	for (const auto& info : connectedDisplayInfoList) {
-		if (info.manufacturer == "ZSpace") {
+		if (info.manufacturer == "ZSpace" ||
+            (info.manufacturer == "Hewlett Packard" && info.productName == "HP Zvr"))
+        {
 #ifdef USE_ZSPACE
 			DisplayInfo zSpaceInfo = info;
 			zSpaceInfo.stereoType = DisplayInfo::StereoType::TimeSequential;
