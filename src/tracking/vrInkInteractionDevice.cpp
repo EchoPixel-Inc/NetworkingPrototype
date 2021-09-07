@@ -164,8 +164,8 @@ void VRInkInteractionDevice::runUpdateLoop()
 			std::invoke(m_MoveCallback, currentPose);
 		}
 
-		if (currentStatus.primaryClick != pastStatus.primaryClick) {
-			if (currentStatus.primaryClick && m_ButtonPressCallback) {
+		if (currentStatus.touchstripClick != pastStatus.touchstripClick) {
+			if (currentStatus.touchstripClick && m_ButtonPressCallback) {
 				std::invoke(m_ButtonPressCallback);
 			}
 			else if (m_ButtonReleaseCallback) {
@@ -173,7 +173,7 @@ void VRInkInteractionDevice::runUpdateLoop()
 			}
 		}
 
-		if (currentStatus.touchstripClick != pastStatus.touchstripClick) {
+		if (currentStatus.primaryClick != pastStatus.primaryClick) {
 			// reserved for additional button press functionality
 		}
 
